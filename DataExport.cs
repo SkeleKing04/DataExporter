@@ -22,7 +22,7 @@ namespace DataExporter
         private static string m_fileDirectory = $".\\";
         private static string m_configPath = $".\\config.txt";
 
-        public static void Init()
+        static DataExport()
         {
             //check for an existing config
             if (!File.Exists(m_configPath))
